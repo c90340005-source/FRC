@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Google Apps Script (contains spreadsheet ID)
+google-apps-script.gs
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

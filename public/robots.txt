@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fitnessfandom.vercel.app/sitemap.xml
