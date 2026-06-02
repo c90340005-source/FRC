@@ -34,8 +34,9 @@ export async function POST(request: NextRequest) {
 
     const result = await response.json();
 
-    if (result.result !== "success") {
-      throw new Error(result.message || "저장 실패");
+    // Apps Script 응답: { ok: true, row: number } 또는 { ok: false, error: string }
+    if (!result.ok) {
+      throw new Error(result.error || "저장 실패");
     }
 
     return NextResponse.json({ success: true });
